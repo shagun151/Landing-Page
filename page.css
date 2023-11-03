@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    border: 0cap;
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(rgba(3, 9, 19, 0.8),rgba(3, 25, 36, 0.2)),url('../Page/landing.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.header{
+    position:relative;
+    top: 0;
+    left: 0%;
+    right: 100%;
+    width:100%;
+    padding: 32px 9%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size:2em;
+    font-weight: 600;
+    color:beige;
+    letter-spacing: 2px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    color:beige ;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(209, 149, 149);
+    transition: 0.4s linear;
+}
+.navbar a:hover:before{
+    width:90%;
+}
+.intro{
+    color: darkgrey;
+    height: 100%;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 30px;
+}
+.intro h1{
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: transparent;
+    -webkit-text-stroke: .7px goldenrod;
+    background-image: linear-gradient(goldenrod,goldenrod);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -5rem 0;
+    animation:homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+.intro h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height:100%;
+    border-right: 2px solid goldenrod;
+    z-index: -1;
+}
+.intro a{
+    text-decoration: none;
+    background: rgb(209, 149, 149);
+    text-decoration: none;
+    color: beige;
+    padding:10px 20px;
+    letter-spacing:2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition:0.4s ;
+}
+.intro a:hover{
+    background: transparent;
+    border: 1px solid rgb(209, 149, 149);
+}
+@keyframes homeBgText{
+   0%,10%,100%{
+    background-position: -66rem 0;
+    padding: 10px 20px;
+   } 
+   65%,85%{
+    background-position:0 0;
+   }
+}
